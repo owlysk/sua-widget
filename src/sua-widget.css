@@ -5,7 +5,7 @@
 
 .sua-widget{
     display: block;
-    position: absolute;
+    position: fixed;
     box-shadow: #6d6d6dad 0px 0px 20px 2px;
     border: solid #6d6d6d5e 1px;
     border-radius: var(--standard-border-radius);
@@ -46,7 +46,7 @@
     line-height: 16px;
 }
 
-.sua-body .close{
+.sua-body .sua-close{
     position: absolute;
     display: inline-block;
     border: solid #6d6d6d83 1px;
@@ -55,13 +55,13 @@
     top: -15px;
     border-radius: 20px;
     padding: 10px 5px;
-    width: 25px;
-    height: 15px;
+    width: 35px;
+    height: 35px;
     line-height: 14px;
     font-size: 14px;
     cursor: pointer;
 }
-.sua-body .close:hover{
+.sua-body .sua-close:hover{
     background-color: #464646;
 }
 
@@ -72,7 +72,7 @@
     display: inline-block;
     line-height: 18px;
 }
-.sua-body .flag{
+.sua-body .sua-flag{
     font-size: calc(var(--standard-font-size) + 20px);
     line-height: calc(var(--standard-font-size) + 20px);
     padding: 5px;
