@@ -35,17 +35,6 @@ var uawidget=document.querySelector('.sua-widget');
 if(uawidget){
     if(debug) console.log('init');
 
-    var isAlreadyClosed = 0;
-    var storage = window.sessionStorage;
-    if( storage.getItem('sua-closed')=="1" ) isAlreadyClosed=1;
-
-    if(isAlreadyClosed)
-    {
-        document.querySelector('.sua-widget').remove();
-        if(debug) console.log('SUA widget is closed');
-        window.stop();
-    }
-    
     var uawidgetbody=document.createElement('div');
     uawidgetbody.classList.add('sua-body');
     uawidget.append(uawidgetbody);
@@ -55,13 +44,13 @@ if(uawidget){
     uawidgetbody.append(icons);
 
     var closeButton = document.createElement('div');
-    closeButton.classList.add('close');
-    closeButton.setAttribute('onclick','document.querySelector(\'.sua-widget\').remove(); storage.setItem(\'sua-closed\',\'1\');');
+    closeButton.classList.add('sua-close');
+    closeButton.setAttribute('onclick','document.querySelector(\'.sua-widget\').remove();');
     closeButton.innerHTML='❌';
     icons.append(closeButton);
 
     var flag = document.createElement('div');
-    flag.classList.add('flag');
+    flag.classList.add('sua-flag');
     flag.innerHTML='🇺🇦';
     uawidgetbody.append(flag);
 
