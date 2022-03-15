@@ -1,3 +1,4 @@
+//https://github.com/owlysk/sua-widget
 var debug = false;
 var langs = {
     'sk': {
