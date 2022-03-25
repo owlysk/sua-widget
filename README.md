@@ -16,6 +16,6 @@ classses can be:
 
 # Languages
 
-- 🇸🇰 SK - Link to ktopomozeukrajine.sk
-- 🇨🇿 CZ - Link to stojimezaukrajinou.cz
-- 🇬🇧 EN - Link to helpukrainewin.org
+- 🇸🇰 SK - Link to https://ktopomozeukrajine.sk
+- 🇨🇿 CZ - Link to https://stojimezaukrajinou.cz
+- 🇬🇧 EN - Link to https://helpukrainewin.org
